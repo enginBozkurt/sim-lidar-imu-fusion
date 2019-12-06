@@ -298,7 +298,6 @@ def compare_1d_results():
     plt.ylabel("Position [m]")
     plt.grid()
     plt.tight_layout()
-    plt.savefig("../final_report/plot_1d_pos.eps", format="eps")
 
     # calculate error
     itp_error = lidar_itp_data["px"] - ideal_data["px"]
@@ -325,7 +324,6 @@ def compare_1d_results():
     plt.ylabel("Position Error [m]")
     plt.grid()
     plt.tight_layout()
-    plt.savefig("../final_report/plot_1d_error.eps", format="eps")
 
 
 class Kalman_Filter_Vector_Observation():
@@ -712,7 +710,6 @@ def compare_2d_results():
     plt.ylabel("X Position [m]")
     plt.grid()
     plt.tight_layout()
-    #plt.savefig("../final_report/plot_2d_pos.eps", format="eps")
 
     # calculate error
     itp_error = np.sqrt((lidar_itp_data["px"]-ideal_data["px"])**2 + (lidar_itp_data["py"]-ideal_data["py"])**2)
@@ -739,7 +736,6 @@ def compare_2d_results():
     plt.ylabel("Distance Error [m]")
     plt.grid()
     plt.tight_layout()
-    #plt.savefig("../final_report/plot_2d_error.eps", format="eps")
 
 
 if __name__ == "__main__":
