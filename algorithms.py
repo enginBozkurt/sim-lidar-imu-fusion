@@ -706,8 +706,8 @@ def compare_2d_results():
     plt.plot(ideal_data["px"], ideal_data["py"], label="Ideal",linewidth=2, color="black")
     plt.legend()
     plt.title("Motion Trajectory: 2D Algorithms Comparison")
-    plt.xlabel("Y Position [m]")
-    plt.ylabel("X Position [m]")
+    plt.xlabel("X Position [m]")
+    plt.ylabel("Y Position [m]")
     plt.grid()
     plt.tight_layout()
 
